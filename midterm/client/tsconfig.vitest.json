@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [],
+  "include": [
+    "src/main.ts",
+    "src/views/FriendActivity.vue",
+    "src/views/MyActivity.vue",
+    "src/views/MyProfile.vue",
+    "src/views/FriendActivity.vue",
+    "src/views/PeopleSearch.vue",
+    "src/views/Statistics.vue"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom"]
+  }
+}
