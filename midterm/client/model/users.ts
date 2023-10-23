@@ -17,15 +17,3 @@ export function getUsers(): User[] {
 export function getUserByEmail(email: string): User | undefined {
     return getUsers().find( x => x.email === email );
 }
-
-export function getUserData(): User[] {
-    return data.users.map((user) => ({
-        id: user.id,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        email: user.email,
-        handle: user.handle,
-        role: user.role === "admin" || user.role === "user" ? user.role : "user",
-        picture: user.picture,
-    }));
-}
